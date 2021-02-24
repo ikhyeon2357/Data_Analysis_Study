@@ -2,9 +2,9 @@
 - 데이터 이해
     - 단별량/다변량 데이터
     - 반응(종속)변수 = 예측(독립)변수 : Y = X
-    - Train / Validation / Test Data
+    - Train / Validation / Test Data(※ 참고 : https://modern-manual.tistory.com/19)
 
-- 머신러닝 : F(x)에서 F(x)함수를 찾아가는 과정
+- 머신러닝 : Y = F(x)에서 F(x)함수를 찾아가는 과정
     - 함수의 형태 : 선형/비선형, Tree 구조, 신경망 등...
 
 ## 2. 수치, 범주예측
@@ -12,16 +12,15 @@
 
 ## 3. 머신러닝 모델 학습 프로세스
 - X, Y 사이의 관계를 찾는 행위(Y = F(x1, x2, ......))
-$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$
     
 - 파라미터 추정
     - Y = w1*X1 + w2*X2 + 오차(w = 파라미터)
     - 오차 = Y - F(x) : Loss function(손실함수)
-    - Sigma(Yi - (w1X1i + w2X2i)^2 : Cost Function(비용함수)
+    - Sum(Yi - (w1X1i + w2X2i)^2 : Cost Function(비용함수)
     - Cost function을 최소로 하는 파라미터 탐색
     - Loss, Cost function
-        + Objective Function >= Cost Function >= Loss function
-        + Loss function : 예측값&실제값 사이의 오차 표현(단일 데이터)
-        + Cost function : 모든 input dataset에 대한 오차 계산 함수
+        - Objective Function >= Cost Function >= Loss function
+        - Loss function : 예측값&실제값 사이의 오차 표현(단일 데이터)
+        - Cost function : 모든 input dataset에 대한 오차 계산 함수
     
 - 모델 결정 -> 파라미터 추정(Cost function을 최소화 하는 방향) 
