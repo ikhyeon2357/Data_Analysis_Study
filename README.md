@@ -2,7 +2,7 @@
 
 강의 목록(Link : https://www.youtube.com/playlist?list=PLpIPLT0Pf7IoTxTCi2MEQ94MZnHaxrP0j)
 
-001 머신러닝 개요(3개)
+001 머신러닝 개요(3개)   
 002 선형회귀모델 1~
 003 로지스틱회귀모델
 004 뉴럴네트워크모델
