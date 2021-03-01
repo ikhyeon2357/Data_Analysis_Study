@@ -3,9 +3,9 @@
 강의 목록( Link : https://www.youtube.com/playlist?list=PLpIPLT0Pf7IoTxTCi2MEQ94MZnHaxrP0j)
 수식 변환( Link : https://latex.codecogs.com/eqneditor/editor.php)
 
-001 머신러닝 개요(3개)   
-002 선형회귀모델   
-003 로지스틱회귀모델   
+**001 머신러닝 개요(3개)   **
+**002 선형회귀모델   **
+**003 로지스틱회귀모델   **
 004 뉴럴네트워크모델   
 005 정규화모델   
 006 knn   
