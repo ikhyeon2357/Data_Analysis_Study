@@ -86,24 +86,17 @@
 - Kernel Function
   - ![image](https://user-images.githubusercontent.com/43491168/112716625-c3b8d200-8f2a-11eb-8569-99fc3a9cea02.png)
 
-### 5장 Example of Nonlinear SVM Using Kernel Function
-- 문제
-  - ![image](https://user-images.githubusercontent.com/43491168/112716663-07134080-8f2b-11eb-8d65-4613f8adebca.png)
+- Example of Nonlinear SVM Using Kernel Function
+  - 문제
+    - ![image](https://user-images.githubusercontent.com/43491168/112716663-07134080-8f2b-11eb-8d65-4613f8adebca.png)
+  - 풀이
+    - ![image](https://user-images.githubusercontent.com/43491168/112716701-52c5ea00-8f2b-11eb-8f9e-ec6272b6e0b6.png)
 
+- Choosing Kernel Function
+  - SVM 사용시 kernel을 결정하는 것은 어려운 문제 -> 딱히 긴준이 없음
+  - 사용하는 kernel에 따라 feature space의 특징이 달라지기 때문에 데이터의 특성에 맞는 kernel을 결정하는 것은 중요
+  - 일반적으로 RBF kernel, sigmoid kernel, low degree polynomial kernel 등을 주로 사용
+  
+  - ![image](https://user-images.githubusercontent.com/43491168/112716780-cf58c880-8f2b-11eb-9510-6c3d9b72c9a2.png)
+  - ![image](https://user-images.githubusercontent.com/43491168/112716786-d67fd680-8f2b-11eb-8e50-653b1875bf9d.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
