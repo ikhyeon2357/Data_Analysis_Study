@@ -1,6 +1,9 @@
 ### 주성분 분석(PCA)
 1. [주성분 분석 개요](#1장-주성분-분석-개요)   
-2. [주성분 분석 수리적 배경](#2장-주성분 분석 수리적 배경)   
+2. [주성분 분석 수리적 배경](#2장-주성분-분석-수리적-배경)   
+3. [PCA 알고리즘](#3장-PCA-알고리즘)   
+4. [PCA 예제](#4장-PCA-예제)   
+5. [PCA 정리](#5장-PCA-정리)   
 
 
 ### 1장 주성분 분석 개요
@@ -46,23 +49,36 @@
     - ![image](https://user-images.githubusercontent.com/43491168/113581050-90c8b980-9661-11eb-9e7c-1bc92d3bb235.png)
 
 ### 3장 PCA 알고리즘
-
+- 주성분 추출
+  - Assume that we have the centered data(mean(x) = 0)(표준화?)
+  - Let X be a p-dimensional random vector with the covariance matrix "Sigma"
+  - Let "alpha" be an p-dimensional vector of length one
+  - Let Z=aTX be the projection of X onto the direction alpha
+  - ![image](https://user-images.githubusercontent.com/43491168/113598222-c2e51600-9677-11eb-81e5-b63ed77cb06d.png)
+  - ![image](https://user-images.githubusercontent.com/43491168/113598701-7ea64580-9678-11eb-8b42-2f2071823d22.png)
 
 ### 4장 PCA 예제
-
+  - ![image](https://user-images.githubusercontent.com/43491168/113598932-d5138400-9678-11eb-8374-b31c8a1e7659.png)
+  - ![image](https://user-images.githubusercontent.com/43491168/113599026-fd9b7e00-9678-11eb-83a0-5076a0fd495e.png)
+  - ![image](https://user-images.githubusercontent.com/43491168/113599198-3f2c2900-9679-11eb-9a06-963ba28bb902.png)
+  - ![image](https://user-images.githubusercontent.com/43491168/113599299-5ec35180-9679-11eb-9529-ddd67eefd092.png)
 - 몇 개의 주성분을 사용해야 할까?
+  - ![image](https://user-images.githubusercontent.com/43491168/113599638-d98c6c80-9679-11eb-97be-9e8e8d4400e5.png)
+    - 첫번째 주성분만 사용해도 92% 설명 가능.
+    - ![image](https://user-images.githubusercontent.com/43491168/113599724-f9bc2b80-9679-11eb-928e-2b43d1ed3456.png)
+- PCA Loading plot
+  - alpha 값 사용
+  - PC1, PC2 = Z1, Z2
+  - ![image](https://user-images.githubusercontent.com/43491168/113599949-4bfd4c80-967a-11eb-9ba8-c34c078ea36e.png)
 
 ### 5장 PCA 정리
 - 요약
   - ![image](https://user-images.githubusercontent.com/43491168/113581998-d0dc6c00-9662-11eb-9372-5464645675b5.png)
 
 - 한계점
-  - 주성분 분석 특징
-  - 한계점 1
-  - 한계점 2
+  - 주성분 분석 특징 : 공분산 행렬의 고유벡터를 사용하므로 단일 가우시안(unimodal) 분포로 추정할 수 있는 데이터에 대해 서로 독립적인 축을 찾는데 사용 가능
+  - 한계점 1 : 데이터의 분포가 가우시안이 아니거나 다중 가우시안(multimodal) 자료들에 대해서는 적용하기가 어려움(대안 : 커널 PCA, LLE)
+  - 한계점 2 : 분류/예측 문제에 대해서 데이터의 범주(Y) 정보를 고려하지 않기 때문에 범주간 구분이 잘 되도록 변환을 해주는 것은 아님(대안 : PLS)
 
-- 실제 예제
-  - Image 분류
-  - IRIS Data...?
-
-- PCA : Loading plot
+- 실제 예제 : Image 분류
+    - ![image](https://user-images.githubusercontent.com/43491168/113600477-09883f80-967b-11eb-917e-17fd8b310c7e.png)
