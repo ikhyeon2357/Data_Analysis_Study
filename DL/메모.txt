@@ -1,0 +1,30 @@
+# 7번
+1. gradient descent
+2. Data(x) preprocessing for gradient descent
+    - x값 간의 단위 차이로인해 gradient descent중 값이 튈 수 있음.
+	- 방법 : zero-centered data(중심을 0으로 이동), normalized data((x-평균)/분산)
+	
+Solution for overfitting
+- More training data
+- Reduce the number of features
+- Reqularization : reqularization strength(람다*시그마(W), 기존 L1, L2 norm과 유사)
+
+
+train, validation, test data
+online learning
+
+
+Training epoch / batch / Iteration 개념
+100개 데이터를 10개 배치로 10번 iteration으로 15회(epoch) 학습
+
+# 8번
+xor 문제
+multilayer neural nets
+학습(w 업데이트 문제) 문제
+backpropagation / Convolutional Neural Networks
+layer가 길어지면 backpropagation으로 w업데이트시 전달이 잘 안됨(복잡해 질수록 성능 저하)
+
+w 초기값의 중요성
+
+
+
