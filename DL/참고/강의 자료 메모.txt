@@ -1,0 +1,43 @@
+# ML lab 07 : 개념
+* gradient descent
+    1. Data(x) preprocessing for gradient descent
+        - x값 간의 단위 차이로인해 gradient descent중 값이 튈 수 있음.(단위 차이로 인해 learning rate에 대한 이동 단위가 다른듯)
+        - 방법 : zero-centered data(중심을 0으로 이동), normalized data((x-평균)/분산)
+
+* Overfittint
+    1. Solution for overfitting
+        - More training data
+        - Reduce the number of features
+        - Reqularization : reqularization strength(람다*시그마(W), 기존 L1, L2 norm과 유사)
+
+
+* online / offline learning
+    1. online learning <--> offline learning
+        - online learning : 새로운 데이터를 실시간으로 학습, 신규 데이터가 들어오면 기존 모델에 추가? 학습
+        - offline learning : 학습 데이터를 한번에 학습(batch learning), 신규 데이터가 들어오면 처음부터 다시 학습 
+        - 참고 : https://choihomeboy.tistory.com/3
+        - 참고 : https://m.blog.naver.com/pertisia/222038150105
+
+* Training epoch / batch / Iteration 개념
+    1. epoch : 전체 데이터가 한번 학습하는 과정 = 1 epoch
+    2. batch : 한번의 배치마다 주는 데이터 샘플의 수
+    3. iteration : epoch을 나누어 실행하는 횟수( = 1epoch을 마치는데 필요한 파라미터 업데이트 횟수)
+        - 1000개 데이터를 100개 batch로 10번 iteration으로 15회(epoch) 학습
+
+
+# ML lab 08 : 개념
+* xor 문제
+    - 단일 선형으로 구분 불가
+    1. 해결 : multilayer neural nets
+        - 문제 : multilayer에서 weight업데이트 불가
+    2. 해결 : backpropagation
+        - Convolutional Neural Networks(왜 여기에 같이 나오는지 모르겠음...)
+        - 문제 : layer가 길어지면 backpropagation으로 w업데이트시 (앞으로?)전달이 잘 안됨(복잡해 질수록 성능 저하)
+
+# ML lab 09 : XOR 문제
+* Multilayer neural nets
+    - 참고 : https://ang-love-chang.tistory.com/26
+    
+    1. 식(예시)
+        -  k(x) = sigmoid(X*W1 + B1)
+        -  H(x) = sigmoid(k(x)*W2 + B2)
