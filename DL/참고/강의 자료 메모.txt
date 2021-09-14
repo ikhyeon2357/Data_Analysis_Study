@@ -42,22 +42,33 @@
         -  k(x) = sigmoid(X*W1 + B1)
         -  H(x) = sigmoid(k(x)*W2 + B2)
 
-########################################################
-# 정리중
-########################################################
+# ML lab 09 : XOR 문제
+* Multilayer neural nets
+    - 참고 : https://ang-love-chang.tistory.com/26?category=878662
+    
+    1. 식(예시), 참고/ 이미지 파일 참고
+        -  k(x) = sigmoid(X*W1 + B1)
+        -  H(x) = sigmoid(k(x)*W2 + B2)
+
 # ML lab 10 : Deep & Wide
-1. Sigmoid 보다 ReLU(Rectified Linear Unit)가 좋은 이유
-    - Sigmoid의 경우 chain rule에 의해 뒤로 갈수록(0~1 사이에 값을 계속 곱하면서 발생) 미분값이 0에 가까워짐(Vanishing gradient)
-    - L1 = tf.nn.relu(tf.matmul(X, W1) + b1)
-    @ 9단 신경망으로 테스트
-    - sigmoid(x)
-    - tanh : -1 ~ 1
-    - Leaky ReLU, ELU, Maxout(전반적으로 ReLU 계열의 활성함수의 정확도가 잘 나옴.)
-    
-2. (W)초기값 문제
-1. Need to set the initial weight values wisely
-    - Not all 0's
-    - Challenging issue
-    - Restricted Boatman Machine(RBM), Deep Belief Nets
-    
-    - Fine Tunning
+    1. Sigmoid 보다 ReLU(Rectified Linear Unit)가 좋은 이유
+        - Sigmoid의 경우 chain rule에 의해 뒤로 갈수록(0~1 사이에 값을 계속 곱하면서 발생) 미분값이 0에 가까워짐(Vanishing gradient)
+        - L1 = tf.nn.relu(tf.matmul(X, W1) + b1)
+        - 참고 : https://pythonkim.tistory.com/40?category=573319
+        
+    2. (W)초기값 문제
+        - Need to set the initial weight values wisely
+            ' Not all 0's(Weight 업데이트 안됨)
+            ' Restricted Boatman Machine(RBM), Deep Belief Nets : https://pythonkim.tistory.com/41?category=573319
+                 : 위 방법으로 W를 초기화 해서 학스할 경우 학습 시간이 얼마 걸리지 않는다.
+                 그래서 학습(learning)이 아니라 Fine Tuning이라고 부름.
+        - xavier, He 등 대안
+            ' RBM의 복잡성을 간단한 방법으로 성능은 낼 수 있음.
+            ' xavier - 입력값과 출력값 사이의 난수를 선택해서 입력값의 제곱근으로 나눈다.
+            ' he - 입력값을 반으로 나눈 제곱근 사용. 분모가 작아지기 때문에 xavier보다 넓은 범위의 난수 생성
+      
+    3. Dropout과 앙상블(Overfitting)
+        - 과적합 대안
+            ' 학습 데이터 추가, 변수의 갯수 축소, 정규화
+        - Dropout : 신경망의 일부를 비활성화(학습중에만 n% dropout, 예측시 100% 사용)
+        - Ensemble...은 앙상블
