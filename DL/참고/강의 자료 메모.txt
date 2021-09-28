@@ -42,14 +42,6 @@
         -  k(x) = sigmoid(X*W1 + B1)
         -  H(x) = sigmoid(k(x)*W2 + B2)
 
-# ML lab 09 : XOR 문제
-* Multilayer neural nets
-    - 참고 : https://ang-love-chang.tistory.com/26?category=878662
-    
-    1. 식(예시), 참고/ 이미지 파일 참고
-        -  k(x) = sigmoid(X*W1 + B1)
-        -  H(x) = sigmoid(k(x)*W2 + B2)
-
 # ML lab 10 : Deep & Wide
     1. Sigmoid 보다 ReLU(Rectified Linear Unit)가 좋은 이유
         - Sigmoid의 경우 chain rule에 의해 뒤로 갈수록(0~1 사이에 값을 계속 곱하면서 발생) 미분값이 0에 가까워짐(Vanishing gradient)
@@ -72,3 +64,29 @@
             ' 학습 데이터 추가, 변수의 갯수 축소, 정규화
         - Dropout : 신경망의 일부를 비활성화(학습중에만 n% dropout, 예측시 100% 사용)
         - Ensemble...은 앙상블
+
+# ML lab 11 : CNN(Convolution Neural Network)
+    1. CNN 기초
+        - 참고 : 
+        - Start with an image(width x hight x depth(RGB) - color image)
+            ' Exmaple : 32x32x3 -> 5x5x3(이미지의 일부만 사용) -> 이미지를 이동하면서 확인(stride : 이동 간격), 이때 동일한 Weight 사용
+            ' Output size : (N - F) / stride + 1(N : 가로 길이(32), F : 부분의 가로 길이(5)) 
+            ' 단점 : 이미지가 점점 작아짐(정보 손실)
+        - Padding : 입력 이미지의 크기와 출력 이미지의 크기가 동일하도록 입력 이미지의 태두리에 '0'값을 추가
+            ' Example : 7x7x3(stride = 1일때 정보 손실 방지) -> pad=1 -> 9x9x3 이미지
+        - Weight의 개수
+            ' Conv Layer shape x filter 수 : ex) 5x5x3(shape)x6(filter 수)
+    2. CNN - Pooling, Full Network
+        - Pooling(= Sampling)
+            ' conv layer에서 작은 사이즈로 Sampling
+            ' Example : 4x4(Single depth slice) -> Max pool, 2x2 filter, stride=2 -> 2x2 이미지(각 filter에 Max값 사용)
+        - Fullty Connected Layer (FC layer)
+            ' 마지막에 일반적인 n-net을 통해 구성(ex : Softmax)
+     3. CNN - ConvNet 활용
+         - AlexNet
+             ' 227x227x3 Images -> Conv_1 = 11x11x3, stride = 4 -> Output : 55x55x3x96 -> Parameters : (11*11*3)*96 = 약 35k -> ...... -> FC
+         - GoogLeNet
+             ' Inception module
+         - ResNet
+             ' 레이어를 점프해서 학습(Layer가 깊지만 합쳐?지는 효과로 학습)
+         - DeepMind's
