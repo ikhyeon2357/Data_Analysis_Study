@@ -21,3 +21,8 @@
 015 Hidden Markov Models   
 016 주요 인자 탐지   
 017 Boosting   
+
+
+# RNN 참고
+- https://davinci-ai.tistory.com/30
+- 
