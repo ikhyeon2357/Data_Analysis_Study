@@ -1,3 +1,4 @@
 - GRU
+- DRNN(oR Stacke RNN)
 - Q : RNN에서 활성함수로 tanh(hyperbolic tan)를 주로 사용하는 이유
 - Q : LSTM에서 각 cell에서 sigmoid와 tanh 조합 이유
