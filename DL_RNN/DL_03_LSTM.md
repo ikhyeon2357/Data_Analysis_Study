@@ -27,3 +27,15 @@
   - cell state를 tanh 하여 나온 -1과 1 사이의 값을 sigmoid 출력 값과 곱하여 최종 출력 값을 연산
   - ![Output Cell](https://user-images.githubusercontent.com/43491168/143901667-259e7fb4-1abe-46a5-a434-8ff513954900.PNG)
 
+### 3. LSTM Code
+```
+model = tf.keras.Sequential([ tf.keras.layers.LSTM(units=30
+                                                   , return_sequences=True
+                                                   , input_shape=[100,2])
+                             , tf.keras.layers.LSTM(units=30)
+                             , tf.keras.layers.Dense(1) ]) 
+
+odel.compile(optimizer='adam', loss='mse') 
+
+history = model.fit(X, Y, epochs=100, verbose=0)
+```
