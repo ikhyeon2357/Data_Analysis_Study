@@ -39,3 +39,10 @@ model.compile(optimizer='adam', loss='mse')
 
 history = model.fit(X, Y, epochs=100, verbose=0)
 ```
+
+### 4. RNN 단점
+- 장기 의존성(Long-Term Dependency)문제
+  - 입력 데이터와 출력 데이터 사이의 길이가 멀어질수록 연관 관계가 줄어듬(데이터의 뒤쪽으로 갈수록, 앞쪽의 입력 데이터를 까먹게 된다.)
+  - ![image](https://user-images.githubusercontent.com/43491168/143873316-3ae87490-e87c-42c2-a666-d167576050a3.png)
+  - 장기의존성 문제를 해결하기 위해서 RNN의 변형 구조인 LSTM(Long Short Term Memory)가 나오게 되었슴.
+
