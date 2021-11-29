@@ -1,10 +1,12 @@
 - Ex : Food, Weather(https://www.youtube.com/watch?v=UNmqTiOnRfg)
+- RNN : 순환 신경망(Recurrent Neural Network)은 은닉 계층 안에 하나 이상의 순환 계층을 갖는 신경망을 의미
 
 ### 1. Neural Network
 - NN 기본 형태
   - ![캡처](https://user-images.githubusercontent.com/43491168/143809355-c5c50355-ca91-45c7-88a3-47ae5ed4f45a.PNG)
 
 ### 2. Simple (Receurrent) Neural Network
+  - [1, 0, 0] / [0, 1, 0] / [0, 0, 1]
   - ![캡처](https://user-images.githubusercontent.com/43491168/143809639-c800a8ed-8942-421c-9944-20c8b40dab24.PNG)
 
 ### 3. Receurrent Neural Network : 1. + 2.
@@ -31,4 +33,4 @@
   - Stock Prediction
   - Sequence Generation
   - Text Generation
-  - Voice Recognition
+  - Voice Recognition 
