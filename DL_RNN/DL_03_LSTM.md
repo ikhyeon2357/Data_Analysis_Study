@@ -1,5 +1,5 @@
-https://davinci-ai.tistory.com/30
-https://www.youtube.com/watch?v=bX6GLbpw-A4
+- https://davinci-ai.tistory.com/30
+- https://www.youtube.com/watch?v=bX6GLbpw-A4
 
 ### 1. LSTM 기본 구조
 -RNN에서 c라는 셀 상태(cell state)라는 변수가 추가적으로 공유
