@@ -28,7 +28,7 @@ https://davinci-ai.tistory.com/30
 - RNN Example : [0.0, 0.1, 0.2, 0.3]이라는 0.1씩 늘어나는 수열 학습
   - ![캡처](https://user-images.githubusercontent.com/43491168/143872615-4d2f2ac2-a6f0-4ad8-9316-8c62e90909f9.PNG)
   - Sample Code
-"""
+```
 model = tf.keras.Sequential([ tf.keras.layers.SimpleRNN(units=10
                                                         , return_sequences=False
                                                         # input_shape : 4 time-step마다 하나의 답이라서 [4,1]을 선언
@@ -38,4 +38,4 @@ model = tf.keras.Sequential([ tf.keras.layers.SimpleRNN(units=10
 model.compile(optimizer='adam', loss='mse') 
 
 history = model.fit(X, Y, epochs=100, verbose=0)
-"""
+```
