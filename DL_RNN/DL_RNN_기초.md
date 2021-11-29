@@ -25,3 +25,10 @@
 - RNN 구조
   - 결과값(y, Food)이 다음 값에 영향을 주는 형태 = 순환 신경망
   - ![캡처_Fin](https://user-images.githubusercontent.com/43491168/143817721-875ae673-f032-4b37-9fb4-dfcdd2c85a5e.PNG)
+
+### 4. 기타
+- 활용 : 
+  - Stock Prediction
+  - Sequence Generation
+  - Text Generation
+  - Voice Recognition
