@@ -1,4 +1,4 @@
-- Ex : Food, Weather
+- Ex : Food, Weather(https://www.youtube.com/watch?v=UNmqTiOnRfg)
 
 ### 1. Neural Network
 - NN 기본 형태
@@ -21,3 +21,7 @@
   - ![캡처_Add](https://user-images.githubusercontent.com/43491168/143817440-587d8207-6d83-4ac2-b411-c6302ddadb1d.PNG)
   - (4) Merge : 2 -> 1, else -> 0
   - ![캡처_Merge](https://user-images.githubusercontent.com/43491168/143817512-fe7f8066-b9bd-402e-9033-299b2abdc9a6.PNG)
+
+- RNN 구조
+  - 결과값(y, Food)이 다음 값에 영향을 주는 형태 = 순환 신경망
+  - ![캡처_Fin](https://user-images.githubusercontent.com/43491168/143817721-875ae673-f032-4b37-9fb4-dfcdd2c85a5e.PNG)
