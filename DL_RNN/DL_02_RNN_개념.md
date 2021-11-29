@@ -1,5 +1,5 @@
-https://davinci-ai.tistory.com/30
-https://www.youtube.com/watch?v=bX6GLbpw-A4 (Gradient Vanishing, Exploding(소실, 폭주))
+- https://davinci-ai.tistory.com/30
+- https://www.youtube.com/watch?v=bX6GLbpw-A4 (Gradient Vanishing, Exploding(소실, 폭주))
 
 # 순환 신경망(RNN)
 - 순환 신경망(Recurrent Neural Network)은 은닉 계층 안에 하나 이상의 순환 계층을 갖는 신경망
