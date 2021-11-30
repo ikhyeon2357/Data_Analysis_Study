@@ -1,1 +1,3 @@
 - https://www.youtube.com/watch?v=KLtMNGjICrk
+- https://yjjo.tistory.com/18
+- https://davinci-ai.tistory.com/30 (별로인듯...)
