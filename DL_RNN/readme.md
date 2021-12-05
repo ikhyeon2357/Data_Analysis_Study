@@ -1,5 +1,5 @@
-- GRU
 - DRNN(oR Stacke RNN)
+- BERT
 - Q : LSTM에서 각 cell에서 sigmoid와 tanh 조합 이유
 
 
