@@ -6,8 +6,9 @@
 
 - LSTM 비교
 - ![캡처](https://user-images.githubusercontent.com/43491168/144735452-8dcc427f-3ed7-4c32-9afa-423ba06f47fd.PNG)
-  - LSTM의 cell state 업음
-  - 활성 함수 5개 -> 3개
+  - LSTM의 cell state 없음
+  - 활성 함수 5개 -> 3개(속도에서 이점)
+  - 분석 결과에서도 큰 차이 없음(주제별 차이가 있음.)
 
 ### 2. GRU 구조
 - Reset Gate
