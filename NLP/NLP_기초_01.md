@@ -91,6 +91,10 @@
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647845-a40f9989-5b83-4332-919d-2b204bb3fc0a.PNG)
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647881-a20ad0f8-4a6d-4950-bc64-d35707b00fa0.PNG)
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647889-867e8b25-b9ce-4234-80c8-e670ec90a926.PNG)
+      - ![캡처](https://user-images.githubusercontent.com/43491168/149647906-b446688f-b995-4a7e-8f9e-f6638d6d7f49.PNG)
+      - ![캡처](https://user-images.githubusercontent.com/43491168/149647925-71cad640-4ccc-4ee1-9eb5-9707e1c6bd01.PNG)
+
+
 
 
 
