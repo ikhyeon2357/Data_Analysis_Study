@@ -89,6 +89,7 @@
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647773-3d19a30c-0a0f-4579-b4e7-c286c1f4b272.PNG)
     - word-document matrix -> SVD matrix decomposition
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647845-a40f9989-5b83-4332-919d-2b204bb3fc0a.PNG)
+    - 차원 축소(미국, 일본 음식 = 2개 차원, 문장(d1~6)에 대한 특이값 분해(nxn))
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647881-a20ad0f8-4a6d-4950-bc64-d35707b00fa0.PNG)
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647889-867e8b25-b9ce-4234-80c8-e670ec90a926.PNG)
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647906-b446688f-b995-4a7e-8f9e-f6638d6d7f49.PNG)
