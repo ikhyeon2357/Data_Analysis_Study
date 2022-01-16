@@ -93,6 +93,9 @@
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647881-a20ad0f8-4a6d-4950-bc64-d35707b00fa0.PNG)
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647889-867e8b25-b9ce-4234-80c8-e670ec90a926.PNG)
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647906-b446688f-b995-4a7e-8f9e-f6638d6d7f49.PNG)
+    - 결과
+      - d1~3 유사(미국 음식), d4~6 유사(일본 음식)
+      - d2가 d1, 3보다 멀지만(빈도 수 때문) 코사인 유사도에서 거리는 상관 없음.(d6 동일)
       - ![캡처](https://user-images.githubusercontent.com/43491168/149647925-71cad640-4ccc-4ee1-9eb5-9707e1c6bd01.PNG)
 
 
