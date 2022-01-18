@@ -1,5 +1,4 @@
--
--
+- https://www.youtube.com/watch?v=dKYFfUtij_U&list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT
 
 ### 1. Bag of Words
 - 단어 순서에 관계 없이 단어들의 출현 빈도(frequency)에만 집중하는 텍스트 데이터의 수치화 표현 방법
