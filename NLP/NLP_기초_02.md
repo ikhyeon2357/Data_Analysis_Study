@@ -18,3 +18,14 @@
     - ![캡처](https://user-images.githubusercontent.com/43491168/149970016-b5feeeec-3aea-4879-846a-87a6ebace5dd.PNG)
   - Python 예제 코드
     - "Study_ZTC_01/NLP/word2vec_tensorflow.ipynb" 참고
+
+### 2. WMD
+- Word mover's distance, 문서 유사도 계산
+- Word2Vec을 사용하여 Euclidean distance 계산
+- Word Embedding 방법?
+- 한문장에서 단어의 이웃들에 의해 계산됨
+
+### 3. 딥러닝 기계번역 : 시퀀스 투 시퀀스 + 어텐션 모델
+- 시퀀스 투 시퀀스
+- 어텐션 모델
+- Teacher forcing
