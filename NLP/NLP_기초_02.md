@@ -46,6 +46,40 @@
   - 비슷한 성능, 속도 개선 : Relaxed WMD(RWMD)
 
 ### 3. 딥러닝 기계번역 : 시퀀스 투 시퀀스 + 어텐션 모델
-- 시퀀스 투 시퀀스
-- 어텐션 모델
+- 시퀀스 투 시퀀스(RNN cell을 활용)
+  - Encoder : 각 단어를 순차적으로 받아 context vector를 만드는것
+  - Decoder : context vector로부터 기계번역, start~end까지 번역
+  - ![캡처](https://user-images.githubusercontent.com/43491168/150668232-e9d6340c-e23a-48ed-a231-8d574f87263c.PNG)
+  - 문제점 : 단어의 사이즈가 많을 땐 문제(context vector = 고정된 사이즈의 벡터)
+- Attention Mechanism
+  - Encoder/Decoder Architecture에서는 Encoder에 나왔던 모든 state를 활용하지 않았음.
+  - Attention Mechanism에서는 Encoder에서 나온 각각의 state를 활용
+  - 장정 : 
+    - 고정된 context vector가 아니라 각 state별 context vector를 새롭게 생성(고정된 사이즈 문제 해결)
+    - 모든 state중 집중해야 될 단어들에만 집중할 수 있다.
+  - 예시
+    - Step 1 : 
+      - ![캡처](https://user-images.githubusercontent.com/43491168/150668560-e2c3c000-7d42-46d0-8f2e-b3ac20c080e0.PNG)
+      - 시퀀스 투 시퀀스에서는 h3가 context vector(하나의 고정 사이즈 벡터)
+      - h1~3(각 state)를 이용해 s1~3 스코어 계산(FC(h3) : Decoder에서 나온 값이 없기 때문에 전에 있던 state 값을 넣어준다.)
+      - 스코어에 softmax값을 취해 확률값(Attention Weight)생성 : 각 단어에 얼마만큼 집중할 것인가
+      - 최종 cv1 = 첫번째 context vector로 번역
+    - Step 2 : 
+      - ![캡처](https://user-images.githubusercontent.com/43491168/150668579-e1c2ddf8-0676-4cb2-b9be-57a78e6dfb02.PNG)
+      - cv2(두번째 context vector)생성후 번역
+      - h1~3가 항상 사용됨
+      - 직전 Decoder 결과 dh1 사용
+    - Step 3 : 
+      - ![캡처](https://user-images.githubusercontent.com/43491168/150668599-86d6eb05-d0cf-4c9f-a1b3-d3170689785c.PNG)
+      - end가 나올때 까지 반복
+
 - Teacher forcing
+  - Train 중 predicton값이 틀렸을 경우 문제가 됨
+  - 따라서 predicton값 대신 정답을 사용 = Teacher forcing\
+  - ![캡처](https://user-images.githubusercontent.com/43491168/150668941-f4974dbc-cc4b-4ac4-b0d5-e607c9ff84e5.PNG)
+
+
+
+
+
+
