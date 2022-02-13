@@ -46,3 +46,15 @@
       - Softmax Layer : 가장 높은 값(확률)을 가지는 단어가 출력 단어
         - Label Smoothing : "0, 1"이 아닌 "0에 가까운 값, 1에 가까운 값"으로 변화(학습 데이터에 치중 됨을 방지, '감사합니다' == '고맙습니다')
   
+### 2. ELMo(Embeddings from language Model)
+  - 기존 word2vec과 달리 주변 문맥에 따라 임베딩함
+  - Example
+    - "Present"
+    - Here is your birthday present(like "gift")
+    - Live in present not past(like "now")
+
+- biLM(Bidirectional Language Model, 양방향? 언어 모델) : 순방향 LM + 역방향 LM
+  - labeling이 필요없음.
+  - 순방향 LM : 현재 단어를 기준으로 다음단어를 예측하도록 학습
+  - 역방향 LM : 뒤에 오는 단어를 기준으로 앞에 단어를 예측하도록 학습
+  - 두 LM을 활용해 embedding을 만듬.
